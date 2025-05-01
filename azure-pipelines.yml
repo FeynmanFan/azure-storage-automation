@@ -10,7 +10,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: Simple build to upload HTML file
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'dnourwebapp - 1 - Azure'

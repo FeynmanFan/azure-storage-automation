@@ -12,8 +12,7 @@ pool:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'dnourwebapp - 1 - Azure'
+    azureSubscription: 'Azure1'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob upload --account-name asadocs --container-name docs --name doc.html --file "docs.html"'
-

@@ -15,4 +15,4 @@ steps:
     azureSubscription: 'Azure1'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az storage blob upload --account-name asadocs --container-name docs --name docs.html --file "docs.html"'
+    inlineScript: 'az storage blob upload --account-name asadocs --container-name docs --name docs.html --file "docs.html" --auth-mode login'

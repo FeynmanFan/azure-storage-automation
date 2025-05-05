@@ -10,9 +10,9 @@ pool:
     vmImage: ubuntu-latest
   
 steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: 'Azure1'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az storage blob upload --account-name asadocs --container-name docs --name docs.html --file "docs.html" --overwrite'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Azure1'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob upload --account-name asadocs --container-name docs --name docs.html --file "docs.html" --overwrite'
